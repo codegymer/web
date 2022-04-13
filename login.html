@@ -1,0 +1,95 @@
+
+
+<!-- @codgymer --- github / instagram / telegram -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box  ;
+    }
+    
+.login-page{
+    background-color: #ff5722;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.box{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   min-width: 80%;
+   
+}
+.heading h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    color:aliceblue
+    
+}
+input[type='text']::placeholder,input[type='password']::placeholder{
+    color: aliceblue;
+
+}
+input[type='text']:focus,input[type='password']:focus{
+    border: 1px solid blue;
+
+
+}
+
+input[type="submit"]{
+    background-color:blue ;
+}
+    </style>
+    <body>
+
+    <section class="login-page">
+        <form>
+            <div class="box">
+                  <div class="heading">
+                      <h2>Member Login</h2>
+                  </div>
+                  <div class="form-body">
+                      <input type="text" placeholder=" Enter Name">
+                      <input type="password" placeholder=" Enter Password">
+                  </div>
+                  <div class="form-footer">
+                      <input type="submit" value="Sign In">
+                  </div>
+            </div>   
+
+        </form>
+
+    </section>
+    
+</body>
+</html>
