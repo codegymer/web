@@ -1,0 +1,79 @@
+<!-- @codgymer --- github / instagram / telegram -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+   #sidebar{
+       position:  absolute;
+       width: 300px;
+       height:100vh;
+       background:#FF5722;
+       left: -300px;
+   }
+   #sidebar.active{
+       left:0;
+       transition: 0.5s;
+   }
+   ul li{
+       list-style: none;
+       color: white;
+       font-size: 20px;
+       padding: 20px 24px;
+       text-transform: capitalize;
+   }
+   ul li:hover{
+       background-color: #F44336;
+   }
+   .toggle-btn span{
+    transition: 0.5s;
+
+       width: 45px;
+       height: 4px;
+       background:#FF5722 ;
+       display: block ;
+       margin-top: 4px;
+
+
+   }
+   .toggle-btn{
+       position: absolute;
+       top: 30px;
+       left: 330px;
+
+   }
+</style>
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>home</li>
+            <li>weak</li>
+            <li>abouy</li>
+            <li>contack</li>
+        </ul>
+
+    </div>
+<script>
+    function show(){
+        document.getElementById('sidebar').classList.toggle('active')
+    }
+</script>
+    
+</body>
+</html>
