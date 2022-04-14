@@ -1,0 +1,48 @@
+
+<!-- @codgymer --- github / instagram / telegram -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d text editable</title>
+</head>
+<style>
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   } 
+   body{
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background:#07d1ff ;
+   }
+   h1{
+       position: relative;
+       color:white;
+       font-size: 10em;
+       line-height: 1.1em;
+       text-align: center;
+       user-select: none;
+       transform: rotate(-10deg) skewX(20deg);
+       text-shadow:-1px 1px #cacaca,
+                     -5px 5px #cacaca,
+                     -8px 8px #cacaca,
+                     -12px 12px #cacaca,
+                     -14px 14px rgb(26, 26, 26);
+        outline: none;
+
+   }
+   
+</style>
+<body>
+
+    <h1 contenteditable="true" spellcheck="false">@codegymer</h1>
+    
+</body>
+</html>
